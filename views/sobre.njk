@@ -17,12 +17,12 @@
         
         <main>
             <div class="image-logo">
-                <img src="/image/Microsoft.VisualStudio.Services.Icons.Default" alt="Imagem">
+                <img src="{{sobre.image_url}}" alt="Imagem">
             </div>
 
             <div class="description">
-                <h1>Rocketseat</h1>
-                <p>Evolua rápido como a tecnologia.</p>
+                <h1>{{sobre.titulo}}</h1>
+                <p>{{sobre.description}}</p>
             </div>
             
             <div class="tecnologias">
@@ -47,12 +47,10 @@
         </main>
 
         <footer>
-            <img src="/image/instagram.jpeg" alt="imagem">
-            <a href="https://rocketseat.com.br/">Instagram</a>
-            <img src="/image/facebook.png" alt="imagem">
-            <a href="https://pt-br.facebook.com/rocketseat/">Facebook</a>
-            <img src="/image/youtube.png" alt="imagem">
-            <a href="https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg">Youtube</a>
+            {% for link in sobre.links %}
+                <img src="{{link.logo}}" alt="imagem">
+                <a href="{{link.url}}">{{link.name}}</a>
+            {% endfor %}
         </footer>
     {% endblock %}
 
