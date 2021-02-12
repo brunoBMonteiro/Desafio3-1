@@ -48,6 +48,7 @@ header h1 {
     height: auto;
     border: var(--color-white) 2px solid;
     cursor: pointer;
+    display: grid;
 }
 
 .card img {
@@ -67,7 +68,7 @@ header h1 {
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
-    
+    align-items: center;
 }
 
 .card #card-content span {

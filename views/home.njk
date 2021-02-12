@@ -16,59 +16,27 @@
     </header>
     <body>
         <section class="cards">
-            <div class="card" id="dark-mode-com-css-mudando-a-aparencia-do-blog-de-maneira-simples-e-rapida">
+
+            {% for item in items %}
+            <div class="card" id="{{item.id}}">
                 <div id="card-image-conteiner">
-                    <img src="https://blog.rocketseat.com.br/content/images/2020/10/dark-mode-com-css-mudando-a-aparencia-do-blog-de-maneira-simples-e-rapida.jpg" alt="Imagem">
+                    <img src="https://blog.rocketseat.com.br/content/images/2020/10/{{item.id}}.jpg" alt="Imagem de {{item.title}}">
                 </div>
 
                 <div id="card-title">
-                    <h1>Dark Mode com CSS — mudando a aparência do Blog de maneira simples e rápida</h1>
+                    <h1>{{item.title}}</h1>
                 </div>
 
                 <div id="card-content">
-                    <p>Por Thiago Marinho</p>
+                    <p>{{item.title}}</p>
                     <span class="material-icons">
                         schedule
                         </span>
-                        <p>3 MIN</p>
+                        <p>{{item.time}}</p>
                 </div>             
             </div>
-
-            <div class="card" id="construindo-um-app-com-mapas-usando-react-native-maps-e-mapbox">
-                <div id="card-image-conteiner">
-                    <img src="https://blog.rocketseat.com.br/content/images/2020/10/teste.jpg" alt="Imagem">
-                </div>
-
-                <div id="card-title">
-                    <h1>Mapas com React usando Leaflet</h1>
-                </div>
-
-                <div id="card-content">
-                    <p>Por Thiago Marinho</p>
-                    <span class="material-icons">
-                        schedule
-                        </span>
-                        <p>8 MIN</p>
-                </div>             
-            </div>
-
-            <div class="card" id="como-renomear-varios-arquivos-de-uma-vez-usando-o-terminal">
-                <div id="card-image-conteiner">
-                    <img src="https://blog.rocketseat.com.br/content/images/2020/11/thumb-como-renomear-varios-arquivos-de-uma-vez-usando-o-terminal.jpg" alt="Imagem">
-                </div>
-
-                <div id="card-title">
-                    <h1>Como renomear vários arquivos de uma vez usando o terminal</h1>
-                </div>
-
-                <div id="card-content">
-                    <p>Por Thiago Marinho</p>
-                    <span class="material-icons">
-                        schedule
-                        </span>
-                        <p>2 MIN</p>
-                </div>             
-            </div>
+            {% endfor %}
+            
         </section>
 
         <div class="modal-overlay active">
