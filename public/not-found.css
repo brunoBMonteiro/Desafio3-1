@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.error {
+    width: 800;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.error img {
+    width: 500px;
+    height: 400px;
+    margin-top: 100px;
+}
+
+.error h1 {
+    color: yellow;
+}
+
+.error h2 {
+    color: yellow;
+}

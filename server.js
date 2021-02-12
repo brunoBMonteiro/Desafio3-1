@@ -20,6 +20,11 @@ server.get("/home", function (req, res){
     return res.render("home", { items: cardBlog})
 })
 
+server.use(function(req, res) {
+    res.status(404).render("not-found");
+  });
+
 server.listen(5000, function() {
     console.log("server is running")
 })
+
