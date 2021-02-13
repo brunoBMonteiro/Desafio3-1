@@ -3,7 +3,8 @@ module.exports = [
         id: "dark-mode-com-css-mudando-a-aparencia-do-blog-de-maneira-simples-e-rapida",
         title: "Dark Mode com CSS — mudando a aparência do Blog de maneira simples e rápida",
         author: "Por Thiago Marinho",
-        time: "3 MIN"
+        time: "3 MIN",
+        featured: true
     },
     {
         id: "construindo-um-app-com-mapas-usando-react-native-maps-e-mapbox",
@@ -15,6 +16,7 @@ module.exports = [
         id: "como-renomear-varios-arquivos-de-uma-vez-usando-o-terminal",
         title: "Como renomear vários arquivos de uma vez usando o terminal",
         author: "Por Thiago Marinho",
-        time: "2 MIN"
+        time: "2 MIN",
+        featured: true
     }
 ]

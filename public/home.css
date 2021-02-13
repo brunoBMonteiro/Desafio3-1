@@ -58,7 +58,7 @@ header h1 {
 
 .card #card-title {
     text-align: center;
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
 .card #card-content {
@@ -168,4 +168,20 @@ footer a:hover {
     color: white;
     cursor: pointer;
     transition: color 200ms;
+}
+
+/* FEATURED */
+.card {
+    position: relative;
+}
+
+.featured {
+    position: absolute;
+    background: #f7d05f;
+    color: #111;
+    padding: 2px 8px;
+    position: absolute;
+    right: 5px;
+    border-radius: 16px;
+    top: -10px;
 }

@@ -19,8 +19,11 @@
 
             {% for item in items %}
             <div class="card" id="{{item.id}}">
-                <div id="card-image-conteiner">
+                <div id="card-image-conteiner {{'featured' if item.featured }} ">
                     <img src="https://blog.rocketseat.com.br/content/images/2020/10/{{item.id}}.jpg" alt="Imagem de {{item.title}}">
+                    {% if item.featured %}
+                        <div class="featured">Featured</div>
+                    {% endif %}
                 </div>
 
                 <div id="card-title">
